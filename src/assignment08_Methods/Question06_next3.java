@@ -1,5 +1,7 @@
 package assignment08_Methods;
 
+
+
 public class Question06_next3 {
 
 	public static void main(String[] args) {

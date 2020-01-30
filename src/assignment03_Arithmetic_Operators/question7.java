@@ -16,7 +16,9 @@ public class question7 {
 		do {
 		System.out.print("Enter item's price in cents...:");
 		Scanner sc = new Scanner(System.in);
-		price = sc.nextInt(); }
+		price = sc.nextInt();
+		sc.close();
+		}
 		
 		while(price%5!=0||price>100);// price should be MAX 1 $(100cents) and 5-cent increments
 		int  quarter, dime, nickles, change = 100 - price; // change is calculated
@@ -24,7 +26,6 @@ public class question7 {
 		dime = change%25/ 10; // dime calculated 
 		nickles = change%25%10 / 5;//Nickels calculated
 		System.out.println("Price...:"+price+" cents.\r"+"Your change is "+change+" cents\r" + quarter + " Quarters, \r" + dime + " Dimes, \r" + nickles + " Nickles.");
-		
 
 	}
 

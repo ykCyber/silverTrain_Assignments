@@ -7,7 +7,8 @@ public class Question01_otel_room {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int number = 0;
-		int startPrice;
+		@SuppressWarnings("unused")
+		int startPrice = 0;
 		do {
 			System.out.print("Select the number of bedrooms 1/2/3..:");
 			number = sc.nextInt();
