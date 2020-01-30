@@ -1,4 +1,4 @@
-package assignment_6_ForLoop;
+package assignment06_ForLoop;
 
 public class Question06_pattern1 {
 

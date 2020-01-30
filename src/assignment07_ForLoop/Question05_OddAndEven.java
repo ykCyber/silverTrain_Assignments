@@ -1,4 +1,4 @@
-package assignment_7_ForLoop.copy;
+package assignment07_ForLoop;
 
 public class Question05_OddAndEven {
 

@@ -1,4 +1,4 @@
-package assignment_6_ForLoop;
+package assignment06_ForLoop;
 
 public class Question02_Fibonacci {
 

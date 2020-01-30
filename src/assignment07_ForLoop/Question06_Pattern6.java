@@ -1,4 +1,4 @@
-package assignment_7_ForLoop.copy;
+package assignment07_ForLoop;
 
 public class Question06_Pattern6 {
 	public static void main(String[] args) {
