@@ -1,4 +1,4 @@
-package assignment_4_If_StatementsSwitchStatement;
+package assignment04_If_StatementsSwitchStatement;
 
 public class Question15 {
 
