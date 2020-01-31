@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Question01_LargeSmallNumber {
 
 	public static void main(String[] args) {
-		largeSmallnumberDefiner();
+		largeSmallnumberDefiner();	
 	}
 
 	public static void largeSmallnumberDefiner() {
