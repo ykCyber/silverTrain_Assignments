@@ -1,4 +1,4 @@
-package assignment03_Arithmetic_Operators;
+package src.assignment03_Arithmetic_Operators;
 
 import java.time.Year;
 import java.util.Scanner;
