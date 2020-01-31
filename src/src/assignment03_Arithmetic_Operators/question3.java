@@ -1,4 +1,8 @@
 package src.assignment03_Arithmetic_Operators;
+<<<<<<< HEAD:src/src/assignment03_Arithmetic_Operators/question3.java
+=======
+
+>>>>>>> d3c7f541a47538ef756ff9c908fa9f5297426b83:src/assignment03_Arithmetic_Operators/question3.java
 
 
 public class question3 {
