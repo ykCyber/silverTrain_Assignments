@@ -1,4 +1,4 @@
-package assignment04_If_StatementsSwitchStatement;
+package src.assignment04_If_StatementsSwitchStatement;
 
 import java.util.Scanner;
 
