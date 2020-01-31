@@ -6,7 +6,6 @@ public class Question01_LargeSmallNumber {
 
 	public static void main(String[] args) {
 		largeSmallnumberDefiner();
-		System.out.println("Asusdan deðiþti");
 	}
 
 	public static void largeSmallnumberDefiner() {
