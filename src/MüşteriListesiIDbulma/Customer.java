@@ -17,7 +17,11 @@ public class Customer {
 		list[2].setDatas(22, 222, "veli", "tan");
 		list[3].setDatas(33, 333, "ayþe", "þan");
 		
-		///bir for döngüsünün içine find costumer ( telefonNumarasý ve isim yazýyorm bana idsini söylüyro)
+///bir for döngüsünün içine find costumer ( telefonNumarasý ve isim yazýyorm bana idsini söylüyro)
+// bu för döngüsünü buraya yazmadan direk method içinde nasýl çalýþtýrýrým
+// amacým main'e findIdCostumer(String name,String Surname) yazýp sonuç bulmak
+//yada overload edip 	findIdCostumer(artýk buraya hangi parametre ile aratmak istersem onu yazayým)
+//		
 		for (int i = 0; i < list.length; i++) {
 
 			findIdOfCustomer(list[i], 333, "ayþe");
