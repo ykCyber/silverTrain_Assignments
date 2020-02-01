@@ -9,7 +9,8 @@ public class Question11_isEven {
 	}
 
 	public static boolean isEven(int i) {
-		return i%2==0;
+		boolean flag = i%2==0;
+		return flag;
 		// TODO Auto-generated method stub
 		
 	}

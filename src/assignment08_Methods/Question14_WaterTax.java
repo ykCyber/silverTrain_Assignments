@@ -24,19 +24,23 @@ public class Question14_WaterTax {
 	public static double waterTax(float waterUsed) {
 		double tax;
 		double fine, ratio;
-		if (waterUsed <= 50) {
+		boolean lessThan50 = waterUsed <= 50;
+		if (lessThan50) {
 			ratio = 0.6;
 			fine = 0;
-		} else if (waterUsed > 50 && waterUsed <= 100) {
-			ratio = 0.9;
-			fine = 0;
-		} else if (waterUsed > 100 && waterUsed <= 150) {
-			ratio = 0.9;
-			fine = 50;
 		} else {
-			ratio = 0.9;
-			fine = 100;
+			boolean between50and100 = waterUsed > 50 && waterUsed <= 100;
+			if (between50and100) {
+				ratio = 0.9;
+				fine = 0;
+			} else if (waterUsed > 100 && waterUsed <= 150) {
+				ratio = 0.9;
+				fine = 50;
+			} else {
+				ratio = 0.9;
+				fine = 100;
 
+			}
 		}
 		tax = waterUsed * ratio + fine;
 		return tax;

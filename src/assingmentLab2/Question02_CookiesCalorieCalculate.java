@@ -12,7 +12,8 @@ public class Question02_CookiesCalorieCalculate {
 		System.out.print("Enter number of cookies to calculate calories : ");
 		Scanner sc = new Scanner(System.in);
 		int quantitiy = sc.nextInt();
-		System.out.println("Total calories of " + quantitiy + " cookies : " + quantitiy * 30 + "cal");
+		int caloriOfcookies = quantitiy * 30;
+		System.out.println("Total calories of " + quantitiy + " cookies : " + caloriOfcookies + "cal");
 		sc.close();
 	}
 }
