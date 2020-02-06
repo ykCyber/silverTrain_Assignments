@@ -1,5 +1,7 @@
 package lab3Cont;
 
+
+
 public class Question11numberOfStringInString {
 
 	public static void main(String[] args) {
