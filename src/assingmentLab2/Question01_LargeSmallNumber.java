@@ -35,5 +35,6 @@ public class Question01_LargeSmallNumber {
 		
 		System.out.println("Small Number :" + smallNumber);
 		System.out.println("Large Number :" + largeNumber);
+		sc.close();
 	}
 }

@@ -32,6 +32,7 @@ public class IntegerSmall {
 		System.out.println("Max number : " + max);
 		System.out.println("Min number : " + min);
 		sc.close();
+		scn.close();
 	}
 
 }
