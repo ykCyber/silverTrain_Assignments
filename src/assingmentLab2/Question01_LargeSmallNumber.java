@@ -7,14 +7,7 @@ public class Question01_LargeSmallNumber {
 	public static void main(String[] args) {
 		largeSmallnumberDefiner();	
 	}
-	public static int minFinder(int a,int b) {
-		if(a<b) return a;
-		else return b;
-	}
-	public static int maxFinder(int a,int b) {
-		if(a>b) return a;
-		else return b;
-	}
+
 	
 	public static void largeSmallnumberDefiner() {
 		Scanner sc = new Scanner(System.in);
@@ -27,8 +20,8 @@ public class Question01_LargeSmallNumber {
 			System.out.print("Enter your next number :");
 			 number = sc.nextInt();
 			
+			 largeNumber = Integer.max(number, largeNumber);
 			smallNumber = Integer.min(number, smallNumber);
-			largeNumber = Integer.max(number, largeNumber);
 			
 			System.out.print("Do you want to enter another number: 0-No, 1-Yes");
 			yesOrNo = sc.nextInt();} 

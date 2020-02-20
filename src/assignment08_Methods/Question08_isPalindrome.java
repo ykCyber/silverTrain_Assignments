@@ -24,7 +24,7 @@ public class Question08_isPalindrome {
 	}
 
 	public static void main(String[] args) {
-		isPalindrome(9);
+		isPalindrome(16561);
 	}
 
 }

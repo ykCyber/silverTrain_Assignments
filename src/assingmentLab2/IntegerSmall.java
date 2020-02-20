@@ -10,21 +10,21 @@ public class IntegerSmall {
 
 		System.out.print("Enter .first number..:");
 
-		int yenisayý = sc.nextInt();
-		int max = yenisayý;
-		int min = yenisayý;
-		
-		String yesOrNo="yes";
-		for (; yesOrNo.equalsIgnoreCase("yes"); System.out.println("go nogo yes  / no"), yesOrNo = scn.nextLine()) {
+		int number = sc.nextInt();
+		int max = number;
+		int min = number;
+
+		String yesOrNo = "yes";
+		for (; yesOrNo.equalsIgnoreCase("yes"); System.out.println("continue? (yes  / no)"), yesOrNo = scn.nextLine()) {
 
 			System.out.print("Enter .next number..:");
-			yenisayý = sc.nextInt();
+			number = sc.nextInt();
 
-			if (max < yenisayý) {
-				max = yenisayý;
+			if (max < number) {
+				max = number;
 			}
-			if (yenisayý < min) {
-				min = yenisayý;
+			if (number < min) {
+				min = number;
 			}
 
 		}
