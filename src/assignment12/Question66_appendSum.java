@@ -16,19 +16,19 @@ public class Question66_appendSum {
 		intList.add(3);
 		ArrayList<Integer> newList = appendPosSum(intList); 
 		System.out.println(newList);
+		System.out.println(intList);
 	}
 
 	public static ArrayList<Integer> appendPosSum(ArrayList<Integer> intList) {
 		ArrayList<Integer> newList = new ArrayList<Integer>(); 
 		int counter=0;
 		for (int i = 0; i < intList.size(); i++) {
-			if (intList.get(i)>-1) {
+			if (intList.get(i)>0) {
 				newList.add(intList.get(i));
-				counter++;
-				newList.set(i, intList.get(i));
+				counter=counter+intList.get(i);
 			}
-			newList.set(newList.size()-1, counter);
 		}
+		newList.set(newList.size()-1, counter);
 		return newList;
 	}
 
