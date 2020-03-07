@@ -21,20 +21,21 @@ public class Question53_Diving_Judge_Points {
 			maxPoint = Math.max(maxPoint, score[i]);
 			minPoint = Math.min(minPoint, score[i]);
 			totalPoint = totalPoint + score[i];
+
 		}
 		totalPoint = totalPoint - maxPoint - minPoint;
 		float difPoint;
-		label1: while (true) {
+		while1: while (true) {
 			System.out.println("Enter difficulty");
 			difPoint = sc.nextFloat();
 			if (difPoint < 3.8 && difPoint > 1.2) {
-				break label1;
+				break while1;
 			} else {
 				System.out.println("Enter a value between 1.2 & 3.8");
 			}
-			}
-			totalPoint = (float) (totalPoint * difPoint * 0.6);
-			System.out.printf("Total: %.2f", totalPoint);
-			sc.close();
+		}
+		totalPoint = (float) (totalPoint * difPoint * 0.6);
+		System.out.printf("Total: %.2f", totalPoint);
+		sc.close();
 	}
 }

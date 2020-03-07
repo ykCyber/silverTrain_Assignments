@@ -1,6 +1,5 @@
 package assignment12;
 
-import java.util.Arrays;
 
 public class Question60 {
 
