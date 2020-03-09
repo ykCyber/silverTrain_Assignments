@@ -13,6 +13,7 @@ public class Question55_CheesBoard {
 		for (int i = 0; i < cheesBoard.length; i++) {
 			for (int j = 0; j < cheesBoard.length; j++) {
 				cheesBoard[j][i] = "" + (j + 1) + (char) (i + 97);
+				cheesBoard[j][i] = "" + (j + 1) + (char) (i + 97);
 			}
 		}
 		for (int i = 0; i < cheesBoard.length; i++) {

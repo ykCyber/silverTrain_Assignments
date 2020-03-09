@@ -29,6 +29,5 @@ public class Question75_SearchString {
 			}
 		}
 		return result;
-
 	}
 }
