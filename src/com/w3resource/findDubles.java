@@ -30,10 +30,10 @@ public class findDubles {
 		int t = 0;
 		for (int j = 0; j < arr.length; j++) {
 			if (arr[j] == i) {
-				Dubs[t] = i;
-				t++;
+				Dubs[t++] = i;
 			}
 		}
+		System.out.println(Arrays.toString(Dubs));
 		return Dubs;
 	}
 }
