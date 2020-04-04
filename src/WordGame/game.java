@@ -13,7 +13,7 @@ public class game {
 	}
 
 	public static void dummyCreat(String question) {
-		dummy = dummy.append("-".repeat(question.length()));
+		dummy = dummy.append("*".repeat(question.length()));
 	}
 
 	public static void wantLetter(String question) {
