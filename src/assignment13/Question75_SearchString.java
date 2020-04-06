@@ -8,7 +8,7 @@ public class Question75_SearchString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<String> str = new ArrayList(Arrays.asList("one apple", "two orange", "four banana"));
-		String searchWord = "for";
+		String searchWord = "four";
 		String searchResult = search(str, searchWord);
 		System.out.println("Result :" + searchResult);
 	}
