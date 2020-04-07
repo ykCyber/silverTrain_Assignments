@@ -1,21 +1,33 @@
 package WordGame;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class game {
-	static StringBuffer dummy = new StringBuffer();
 
-	public static void main(String[] args) {
-		String question = "eclipse";
-		dummyCreat(question);
-		wantLetter(question);
+	public static StringBuffer dummy = new StringBuffer();
+	static int i = 1;
+
+	public game(int i2) {
+		i = i2;
+		startGame(i);
+	}
+
+	public void startGame(int i) {
+		// TODO Auto-generated method stub
+		String soru = answerQuestion.getQuestion(i);
+
+		dummyCreat(answerQuestion.getAnswer(i));
+		wantLetter(answerQuestion.getAnswer(i));
+
 	}
 
 	public static void dummyCreat(String question) {
-		dummy = dummy.append("*".repeat(question.length()));
+		dummy.append("-".repeat(question.length()));
 	}
 
 	public static void wantLetter(String question) {
+		System.out.println(answerQuestion.getQuestion(i));
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Harf almak istiyormusun E/H");
 		String answer = sc.nextLine();
@@ -43,23 +55,25 @@ public class game {
 
 	}
 
-	public static void addCharToDash(StringBuffer dummy, String question) {
+	public static void addCharToDash(StringBuffer alfa, String question) {
+		dummy = alfa;
 		if (dummy.toString().equalsIgnoreCase(question)) {
 			nextQuestion();
-		}
-		Random rn = new Random();
-		int hintNumber = rn.nextInt(question.length()) + 0;
-
-		if (dummy.charAt(hintNumber) == '-') {
-			dummy.setCharAt(hintNumber, question.charAt(hintNumber));
-			System.out.println(dummy);
 		} else {
-			addCharToDash(dummy, question);
+			Random rn = new Random();
+			int hintNumber = rn.nextInt(question.length()) + 0;
+
+			if (dummy.charAt(hintNumber) == '-') {
+				dummy.setCharAt(hintNumber, question.charAt(hintNumber));
+				System.out.println(dummy);
+			} else {
+				addCharToDash(dummy, question);
+			}
 		}
 		wantLetter(question);
 	}
 
 	private static void nextQuestion() {
-		System.out.println("NextQuestion Methodu yazılacak");
+		i++;
 	}
 }
