@@ -29,27 +29,26 @@ public class TV {
 	}
 
 	public void setChannel(int channel) {
-		if (channel <= 0 || channel > 120||this.isOn()==false) {
+		if (channel <= 0 || channel > 120 || this.isOn() == false) {
 			System.out.println("ERROR: TV is either OFF or invalid Channel");
-		}
-		else this.channel=channel;
+		} else
+			this.channel = channel;
 	}
 
 	public int getVolumeLevel() {
-		if(this.on==false) {
+		if (this.on == false) {
 			System.out.println("Tv is OFF  ");
 			return 0;
-		}
-		else
-		return volumeLevel;
+		} else
+			return volumeLevel;
 	}
 
 	public void setVolumeLevel(int volumeLevel) {
 		if (volumeLevel < 1 || volumeLevel > 7 || this.isOn() == false) {
 			System.out.println("ERROR: TV is either OFF or invalid Volume level");
 
-		}else
-		this.volumeLevel = volumeLevel;
+		} else
+			this.volumeLevel = volumeLevel;
 	}
 
 	public void channelUP() {
