@@ -2,9 +2,11 @@ package assignment14.Question06;
 
 public class ParkingMeter {
 
-	private int timeLeft = 0, maxTime;
+	private int timeLeft = 0;
+	final int MAX_TIME;
 
 	public int getTimeLeft() {
+		int alfa = 0;
 		return timeLeft;
 	}
 
@@ -13,19 +15,15 @@ public class ParkingMeter {
 	}
 
 	public int getMaxTime() {
-		return maxTime;
-	}
-
-	public void setMaxTime(int maxTime) {
-		this.maxTime = maxTime;
+		return MAX_TIME;
 	}
 
 	public ParkingMeter(int maxTime) {
-		this.maxTime = maxTime;
+		this.MAX_TIME = maxTime;
 	}
 
 	public boolean add(int i) {
-		if (i == 25 && this.getMaxTime() >= i + this.timeLeft) {
+		if (i == 25 && this.getMaxTime() >= 30 + this.timeLeft) {
 			this.timeLeft = 30 + this.timeLeft;
 			return true;
 		} else

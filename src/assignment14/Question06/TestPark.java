@@ -5,6 +5,9 @@ public class TestPark {
 	public static void main(String[] args) {
 		ParkingMeter pm = new ParkingMeter(25);
 		System.out.println(pm.getMaxTime());
+		pm.tick();
+		pm.tick();
+		pm.tick();
 		pm.add(25);
 		System.out.println("pm.getTimeLeft() = " + pm.getTimeLeft());
 		for (int i = 0; i < 28; i++) {

@@ -1,15 +1,18 @@
 package assignment14.Question04;
 
 public class Person {
-	private String FirstName, lastName;
-	private int age;
+	public static int alfa = 155;
+	public static String name = "CyberTek";
+	public String FirstName= "mike";
+	String lastName;
+	public int age;
 
 	public String getFirstName() {
 		return FirstName;
 	}
 
-	public void setFirstName(String firsaName) {
-		this.FirstName = firsaName;
+	public void setFirstName(String firstaName) {
+		this.FirstName = firstaName;
 	}
 
 	public String getLastName() {
