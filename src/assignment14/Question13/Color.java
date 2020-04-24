@@ -39,7 +39,7 @@ public class Color {
 		String result;
 		for (Field field : colors) {
 			boolean flag = false;
-			 result = new String(field.getName().toString());
+			 result = new String(field.getName());
 			int[] colorValues=null; 
 			
 				try {

@@ -1,3 +1,7 @@
+/.project
+/.settings/
+/WordGame/
+/assignment03_Arithmetic_Operators/
 /assignment04_If_StatementsSwitchStatement/
 /assignment05_IF_StatementsSwitchStatement/
 /assignment06_ForLoop/
@@ -8,8 +12,11 @@
 /assignment11/
 /assignment12/
 /assignment13/
-/assignment14/
 /assingmentLab2/
 /com/
+/assignment14/
 /day32/
 /lab3Cont/
+/flipGrid/
+/flipGridQuestion04/
+/telephone/

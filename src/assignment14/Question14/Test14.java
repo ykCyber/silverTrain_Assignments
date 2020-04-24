@@ -6,7 +6,7 @@ public class Test14 {
 
 	public static void main(String[] args) {
 		TJMAxx tjmAxx = new TJMAxx();
-		Item it1 = new Item("Watch", 1, 2, 100);
+	
 		Item it2 = new Item("Phone", 2, 20, 200);
 		Item it3 = new Item("Hat", 3, 20, 30);
 		Item it4 = new Item("laptop", 4, 20, 40);
@@ -18,8 +18,8 @@ public class Test14 {
 		OnSaleItem osi4 = new OnSaleItem("bag", 10, 20, 35.5, 10);
 		OnSaleItem osi5 = new OnSaleItem("note", 11, 20, 355, 50);
 		OnSaleItem osi6 = new OnSaleItem("knife", 12, 20, 355, 50);
-		tjmAxx.addRegularItem(it1);
-		tjmAxx.addRegularItem(it2);
+		tjmAxx.addRegularItem(new Item("Watch", 1, 2, 100));
+		tjmAxx.addRegularItem(new Item("Watch", 1, 2, 100));
 		tjmAxx.addRegularItem(it3);
 		tjmAxx.addRegularItem(it4);
 		tjmAxx.addRegularItem(it5);
@@ -30,12 +30,15 @@ public class Test14 {
 		tjmAxx.addOnSaleItem(osi4);
 		tjmAxx.addOnSaleItem(osi5);
 		tjmAxx.addOnSaleItem(osi6);
-		System.out.println("find by name " + tjmAxx.getOnSaleItem("pencil").getCatalogNumber());
-		System.out.println("find by name " + tjmAxx.getOnSaleItem("pencil").getQuantity());
-		for (int i = 0; i < 25; i++) {
-			tjmAxx.buyItem(7);
-			System.out.println("find by name " + tjmAxx.getOnSaleItem("pencil").getQuantity());
-			
+	//	System.out.println(tjmAxx.getItem(1).getName());
+		tjmAxx.addRegularItem("car", 55, 5, 100);
+		System.out.println(tjmAxx.getItem(55).getName());
+//		System.out.println("find by name " + tjmAxx.getOnSaleItem("pencil").getCatalogNumber());
+//		System.out.println("find by name " + tjmAxx.getOnSaleItem("pencil").getQuantity());
+//		for (int i = 0; i < 25; i++) {
+//			tjmAxx.buyItem(7);
+//			System.out.println("find by name " + tjmAxx.getOnSaleItem("pencil").getQuantity());
+//			
 		}
 //		System.out.println(osi5.getCatalogNumber());
 //		System.out.println(tjmAxx.getItem(11).toString());
@@ -51,4 +54,4 @@ public class Test14 {
 //		System.out.println(tjmAxx.getAllItemNames());
 	}
 
-}
+

@@ -7,9 +7,10 @@ public class Item {
 	private double price;
 	public Item(String name, int catalogNumber, int quantity, double price) {
 		super();
+		
 		this.name = name;
 		this.catalogNumber = catalogNumber;
-		this.quantity = quantity;
+		this.quantity = getQuantity();
 		this.price = price;
 	}
 	public String getName() {

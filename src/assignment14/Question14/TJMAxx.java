@@ -22,7 +22,11 @@ public class TJMAxx {
 	public List<OnSaleItem> getOnSaleItems() {
 		return onSaleItems;
 	}
-
+	
+	
+	public void addRegularItem(String name, int catalogNumber, int quantity, int price  ) {
+		this.addRegularItem(new Item(name, catalogNumber, quantity, price));
+	}
 	public void addRegularItem(Item item) {
 		this.regularItems.add(item);
 	}
@@ -67,12 +71,14 @@ public class TJMAxx {
 	public Item getItem(int catalogNumber) {
 		for (int i = 0; i < this.getOnSaleItems().size(); i++) {
 			if (this.getOnSaleItems().get(i).getCatalogNumber() == catalogNumber) {
-				return (OnSaleItem) this.getOnSaleItems().get(i);
+				return  this.getOnSaleItems().get(i);
+				
+				
 			}
 		}
 		for (int i = 0; i < this.getRegularItems().size(); i++) {
 			if (this.getRegularItems().get(i).getCatalogNumber() == catalogNumber) {
-				return (Item) this.getRegularItems().get(i);
+				return   this.getRegularItems().get(i);
 			}
 		}
 		return null;
@@ -96,6 +102,7 @@ public class TJMAxx {
 	public void removeItem(int catalogNumber) {
 		int indexOfonSale = this.onSaleItems.indexOf(this.getItem(catalogNumber));
 		int indexOfRegulerItem = this.regularItems.indexOf(this.getItem(catalogNumber));
+		
 		if (indexOfonSale > -1) {
 			this.onSaleItems.remove(indexOfonSale);
 		}
