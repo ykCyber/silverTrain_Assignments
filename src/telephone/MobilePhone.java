@@ -5,6 +5,10 @@ public class MobilePhone {
 	String phoneType;
 	int batteryCapacity;
 
+	public static void music() {
+		System.out.println("Playing on RADIO ");
+	}
+
 	public void call(String name) {
 		System.out.println("Calling  " + name + " via celular provider");
 	}

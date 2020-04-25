@@ -2,38 +2,40 @@ package telephone;
 
 import java.util.Scanner;
 
-public class GooglePhone extends MobilePhone {
-	Scanner sc = new Scanner(System.in);
+public class GooglePhone extends Smartphone {
 
-	String androidVerison;
+	
 
-	public GooglePhone(String androidVerison) {
+	public GooglePhone(String OS) {
 		super();
-		this.androidVerison = androidVerison;
+		this.OS = OS;
 	}
 
 	@Override
 	public void call(String name) {
-		System.out.println("Do you want to use Google");
+		System.out.println("Do you want to use Google DOU ");
 		String answer = sc.nextLine();
 		if (answer.contains("yes")) {
-			System.out.println("Calling " + name + " via facetime");
+			duoCall(name);
+
 		} else {
 			super.call(name);
 		}
 	}
 
-	@Override
-	public void call(int name) {
-		// TODO Auto-generated method stub
-		super.call(name);
+	public void duoCall(String name) {
+		System.out.println("Calling " + name + " via GOOGLE DUO");
+
 	}
 
-	public String getAndroidVerison() {
-		return androidVerison;
+	public String getOS() {
+		return OS;
 	}
 
-	public void setAndroidVerison(String androidVerison) {
-		this.androidVerison = androidVerison;
+	public void setAndroidVersion(String OS) {
+		this.OS = OS;
 	}
+
+	Scanner sc = new Scanner(System.in);
+
 }

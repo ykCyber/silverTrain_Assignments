@@ -70,7 +70,8 @@ public class TV {
 	}
 
 	public void channelDown() {
-		this.channel--;
+		this.setChannel(this.getChannel()-1);
+		;
 	}
 
 	public boolean isOn() {

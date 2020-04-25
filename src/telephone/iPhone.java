@@ -2,25 +2,31 @@ package telephone;
 
 import java.util.Scanner;
 
-public class iPhone extends MobilePhone {
-	String OS;
-	Scanner sc = new Scanner(System.in);
+public class iPhone extends Smartphone {
+	
+	
+	public static void music() {
+		System.out.println("Playing on iTUNES");
+	}
+
+	public static void appStore() {
+		System.out.println("You can use AppStore");
+	}
 
 	@Override
 	public void call(String name) {
 		System.out.println("Do you want to use FaceTime");
 		String faceTime = sc.nextLine();
 		if (faceTime.contains("yes")) {
-			System.out.println("Calling " + name + " via facetime");
+			faceTimeCall(name);
 		} else {
 			super.call(name);
 		}
 	}
 
-	@Override
-	public void call(int number) {
-		// TODO Auto-generated method stub
-		super.call(number);
+	public void faceTimeCall(String name) {
+		System.out.println("Calling " + name + " via facetime");
+
 	}
 
 	public iPhone(String oS) {
@@ -35,4 +41,6 @@ public class iPhone extends MobilePhone {
 	public void setOS(String oS) {
 		OS = oS;
 	}
+
+	Scanner sc = new Scanner(System.in);
 }

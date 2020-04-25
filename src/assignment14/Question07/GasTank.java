@@ -54,7 +54,7 @@ public class GasTank {
 	}
 
 	public boolean isFull() {
-		return this.getGasLevel()==this.getCapacity();
+		return this.getGasLevel()>=this.getCapacity()-0.1;
 	}
 
 }

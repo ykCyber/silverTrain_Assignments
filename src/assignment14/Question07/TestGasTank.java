@@ -21,6 +21,9 @@ public class TestGasTank {
 			System.out.println("gt.isEmpty() = " + gt.isEmpty());
 			gt.addGas(20.34);
 			System.out.println("gt.fillUp() = " + gt.fillUp());
+			gt.addGas(30);
+			gt.useGas(0.2);
+			System.out.println("gt.getGasLevel() = " + gt.getGasLevel());
 			System.out.println(gt.isFull());
 
 			
