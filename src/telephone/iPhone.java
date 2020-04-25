@@ -6,7 +6,12 @@ public class iPhone extends Smartphone {
 	
 	
 	public static void music() {
-		System.out.println("Playing on iTUNES");
+		System.out.println("whic song do you wantto listen:");
+		itunes(tc.nextLine());
+	}
+
+	private static void itunes(String nextLine) {
+		//bul klip
 	}
 
 	public static void appStore() {
@@ -15,6 +20,7 @@ public class iPhone extends Smartphone {
 
 	@Override
 	public void call(String name) {
+		//TODO:  overriding run-time polymorphism - dynamic polymorphism
 		System.out.println("Do you want to use FaceTime");
 		String faceTime = sc.nextLine();
 		if (faceTime.contains("yes")) {
@@ -30,7 +36,7 @@ public class iPhone extends Smartphone {
 	}
 
 	public iPhone(String oS) {
-
+		System.out.println(" You can achieve iPhone Class  ");
 		OS = oS;
 	}
 
@@ -43,4 +49,5 @@ public class iPhone extends Smartphone {
 	}
 
 	Scanner sc = new Scanner(System.in);
+	static Scanner tc = new Scanner(System.in);
 }

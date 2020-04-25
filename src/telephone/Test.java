@@ -1,27 +1,44 @@
 package telephone;
 
 
-
-
 public class Test {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		MobilePhone mp1 = new MobilePhone();
+        MobilePhone nokia = new MobilePhone();
+        new iPhone("12");
+        ((iPhone)nokia).music();
+      //  nokia = new Android("samsung", "10");
+       // nokia.call("ömer");
 
-		MobilePhone mp2 = new iPhone("13.5");
+//        iPhone xMax = new iPhone("12");
+//        ( nokia) = new iPhone("123");
 
-		MobilePhone mp3 = new GooglePhone("Pie");
+//        (nokia).music();
+//        mp = new iPhone("13");
 
-//		mp2.call("mommy");
-//		((Smartphone) mp2).navigation("HOME");
-//		((iPhone) mp2).appStore();
-		((iPhone)mp2).music();
-//		mp1.call("mom");
-//		mp2.call("Dad");
-//		((iPhone) mp2).music();
-//		((iPhone) mp2).appStore();
 
-	}
+//        if( mp instanceof Android){
+//            System.out.println("android");
+//        }
+//        else{
+//            System.out.println("other");
+    }
+//		mp = new MobilePhone();
+//		mp = new Android("Samsung","Android 10");
+//        mp.navigation();
+
+//        mp = new iPhone("13.2");
+//		mp.music();
+//		((iPhone) mp).music();
+//		mp.call(" sam");
+//		((Smartphone)mp).navigation("job");
+//		 mp.navigation();
+//		(mp).appStore();.,
+//		((Smartphone)mp).navigation("home");
+//		MobilePhone mp1 = new iPhone("12");
+
 
 }
+
+
