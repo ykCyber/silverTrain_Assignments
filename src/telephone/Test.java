@@ -6,7 +6,8 @@ public class Test {
     public static void main(String[] args) {
 
         MobilePhone nokia = new MobilePhone();
-        new iPhone("12");
+                new MobilePhone();
+       nokia=  new iPhone("12");
         ((iPhone)nokia).music();
       //  nokia = new Android("samsung", "10");
        // nokia.call("ömer");
