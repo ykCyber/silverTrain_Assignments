@@ -1,6 +1,10 @@
 package telephone;
 
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+
 public class Test {
 
     public static void main(String[] args) {
@@ -8,8 +12,12 @@ public class Test {
         MobilePhone nokia = new MobilePhone();
                 new MobilePhone();
        nokia=  new iPhone("12");
+        Smartphone sm = new iPhone("13");
         ((iPhone)nokia).music();
-      //  nokia = new Android("samsung", "10");
+        System.out.println(nokia.hashCode());
+               //  nokia = new Android("samsung", "10");
+
+
        // nokia.call("ömer");
 
 //        iPhone xMax = new iPhone("12");

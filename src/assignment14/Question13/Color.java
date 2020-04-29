@@ -37,19 +37,19 @@ public class Color {
 	public String toString() {
 		Field[] colors = Color.class.getFields();
 		String result;
+
 		for (Field field : colors) {
-			boolean flag = false;
 			 result = new String(field.getName());
-			int[] colorValues=null; 
-			
-				try {
-					colorValues =  (int[]) Color.class.getField(result).get(colorValues);
-					flag = Arrays.equals(colorValues, this.rgb);
-				} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException
-						| SecurityException e) {
-					e.printStackTrace();
-				}
-			if (flag) {
+			int[] colorValues=null;
+
+			try {
+				colorValues =  (int[]) Color.class.getField(result).get(colorValues);
+			} catch (IllegalAccessException e) {
+				e.printStackTrace();
+			} catch (NoSuchFieldException e) {
+				e.printStackTrace();
+			}
+			if (Arrays.equals(colorValues, this.rgb)) {
 
 				return result;
 			}
