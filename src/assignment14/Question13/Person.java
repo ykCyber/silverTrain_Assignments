@@ -16,7 +16,7 @@ public class Person {
 		rgb[2] = r;
 	}
 
-	public Person() {
+	public Person(String adam, int i) {
 		this(255, 255, 255);
 	}
 
